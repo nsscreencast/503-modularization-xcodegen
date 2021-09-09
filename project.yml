@@ -1,0 +1,23 @@
+name: DinnerTime
+options:
+  bundleIdPrefix: com.ficklebits.dinnertime
+targets:
+  App:
+    type: application
+    platform: "iOS"
+    deploymentTarget: "14.0"
+    sources: [Source]
+    scheme:
+      testTargets:
+        - Tests
+    info:
+      path: "Source/Info.plist"
+      properties:
+        UILaunchStoryboardName: 
+
+  Tests:
+    type: bundle.unit-test
+    platform: "iOS"
+    deploymentTarget: "14.0"
+    sources: [Tests]
+
